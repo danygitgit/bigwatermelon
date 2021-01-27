@@ -58,11 +58,12 @@
         }
     </script> -->
 
-    <link rel="stylesheet" type="text/css" href="style-mobile.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="style-mobile.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style-pc.css" />
 
 </head>
 
-<body style="margin: 0; background: #ddd;" align="center">
+<body style="margin: 0; background: url('./src/watermelon.jpg') no-repeat fixed center;" align="center">
     <div style="align:center;display: none"><img src="res/share.jpg" width="10%" /></div>
 
     <div id="canvasDiv" style="width:100%;height:100%;">
@@ -148,6 +149,9 @@
         function onload() {
             var winHeight = document.documentElement.clientHeight;
             document.getElementById("canvasDiv").style.height = winHeight + "px";
+            document.getElementById("canvasDiv").style.width = "500px";
+            document.getElementById("canvasDiv").style.margin = "0 auto";
+            document.getElementById("canvasDiv").style.background = "green";
         };
         window.onload = function() {
             document.getElementById("block-Box").style.display = "none";
